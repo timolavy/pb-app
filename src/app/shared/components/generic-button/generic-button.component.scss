@@ -1,0 +1,19 @@
+@import 'src/assets/styles/colors';
+
+.generic-btn {
+  padding: 7px 45px;
+  border-radius: 0;
+  font-family: Fixture-Expanded-Regular, "Helvetica Neue", sans-serif;
+  height: 56px;
+
+  &.primary {
+    background-color: #000;
+    color: #fff;
+    border: solid 1px #000;
+
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+}

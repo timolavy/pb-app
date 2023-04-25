@@ -1,0 +1,43 @@
+@import 'src/assets/styles/colors';
+
+:host {
+  width: 100%;
+
+  .nav-bar {
+    padding: 30px 30px;
+    min-height: 50px;
+
+    .logo {
+      width: 85px;
+    }
+
+    .nav-bar-link {
+      cursor: pointer;
+      font-size: 15px;
+      text-decoration: none;
+
+      &.black {
+        color: black;
+      }
+
+      &.white {
+        color: white;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+      
+      &.active, .active {
+        font-weight: 600;
+      }
+    }
+
+    pb-login-popup {
+      position: absolute;
+      top: 80px;
+      right: 30px;
+      z-index: 2;
+    }
+  }
+}

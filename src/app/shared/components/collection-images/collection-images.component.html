@@ -1,0 +1,11 @@
+<div class="mansory-container">
+  <h2>{{ collection.label }}</h2>
+  <ngx-masonry class="mansory-list" [options]="masonryOptions">
+    <div
+      ngxMasonryItem
+      *ngFor="let image of collection.images.details?.slice(0, 6); trackBy: trackByFn"
+      [prepend]="false"
+      class="masonry-item"
+    ><img [src]="env.uploads + image"></div>
+  </ngx-masonry>
+</div>

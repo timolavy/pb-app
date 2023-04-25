@@ -1,0 +1,31 @@
+<div class="popup-container">
+  <form
+    class="flex flex-col"
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()"
+  >
+    <mat-form-field>
+      <mat-label>{{ 'LOGIN.EMAIL' | translate }}</mat-label>
+      <input formControlName="email" type="email" matInput>
+      <mat-error *ngIf="loginForm.controls.email.errors as errors">
+        <span *ngIf="errors.required">{{ 'LOGIN.REQUIRED' | translate }}</span>
+        <span *ngIf="errors.email">{{ 'LOGIN.EMAIL_FORMAT' | translate }}</span>
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>{{ 'LOGIN.PASSWORD' | translate }}</mat-label>
+      <input formControlName="password" type="password" matInput>
+      <mat-error *ngIf="loginForm.controls.password.errors as errors">
+        <span *ngIf="errors.required">{{ 'LOGIN.REQUIRED' | translate }}</span>
+        <span *ngIf="errors.minlength">{{ 'LOGIN.MIN_LENGTH' | translate: {value: errors.minlength.requiredLength} }}</span>
+      </mat-error>
+    </mat-form-field> 
+
+    <pb-generic-button
+      [label]="'LOGIN.SUBMIT' | translate"
+      type="submit"
+      [disabled]="this.loginForm.invalid"
+    ></pb-generic-button>
+  </form>
+</div>

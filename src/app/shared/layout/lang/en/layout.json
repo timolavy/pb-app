@@ -1,0 +1,33 @@
+{
+  "FOOTER": {
+    "CGV": "CGV",
+    "CREDITS": "Credits",
+    "DELIVERY": "Delivery",
+    "DESCRIPTION": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.",
+    "FAQ": "FAQ",
+    "LEGAL_MENTION": "Legal notice",
+    "SITE": "Site map",
+    "TITLE": "Première Base"
+  },
+  "HEADER": {
+    "ACCOUNT": "My account",
+    "BASKET": "Basket",
+    "BRAND": "The brand",
+    "COLLECTIONS": "Collections",
+    "CONTACT": "Contact",
+    "ILLUSTRATIONS": "Illustrations",
+    "JOURNAL": "Journal",
+    "LOGOUT": "Logout",
+    "LOGIN": "Sign in"
+  },
+  "LOGIN": {
+    "EMAIL": "Email",
+    "EMAIL_FORMAT": "Not a valid email",
+    "ERROR": "Your login details are incorrect.",
+    "MIN_LENGTH": "Field length is min {{value}}",
+    "PASSWORD": "Password",
+    "REQUIRED": "Field is required",
+    "SUBMIT": "Sign in",
+    "SUCCESS": "You are now connected!"
+  }
+}

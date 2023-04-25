@@ -1,0 +1,35 @@
+{
+  "_id": "621f61b46fe36c00160d2828",
+  "label": "Francesca",
+  "details": "Édition limitée 100 exemplaires, numérotés et signés<br>Papier mat artistique 200g<br>Formats 30×40 – 50×70",
+  "category": {
+    "_id": "617e8e64c7128c0016190a31",
+    "createdAt": "2021-10-31T12:20:42.233Z",
+    "label": "Limited Edition"
+  },
+  "theme": {
+    "_id": "617e8e2dc7128c0016190a2e",
+    "createdAt": "2021-10-31T12:20:42.231Z",
+    "label": "Hip-Hop"
+  },
+  "formats": [
+    {
+      "_id": "621f61b46fe36c00160d2829",
+      "format": "617e8e21c7128c0016190a2d",
+      "label": "30x40 cm",
+      "price": 55
+    },
+    {
+      "_id": "621f61b46fe36c00160d282a",
+      "format": "6187dbe9827833001643424a",
+      "label": "50x70 cm",
+      "price": 90
+    }
+  ],
+  "stock": 100,
+  "images": {
+    "details": [],
+    "settingScene": "francesca-detail",
+    "packShot": "francesca.png"
+  }
+}

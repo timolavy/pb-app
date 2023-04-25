@@ -1,0 +1,16 @@
+{
+  "ILLUSTRATIONS": {
+    "TITLE": "Illustrations"
+  },
+  "ILLUSTRATION": {
+    "DELIVERY": "Livraison et retour",
+    "DELIVERY_DETAILS": "Veuillez consulter <a href=\"#\">notre page</a> sur la politque de livraison et retour",
+    "DETAILS": "Détails",
+    "FORMAT": "Format",
+    "FORMATS": "Formats",
+    "ORDER": "Ajouter au panier",
+    "PRODUCT_ADDED": "L'article a été ajouté à votre panier",
+    "QUANTITY": "Quantité",
+    "STOCK": "{{ stock }} en stock"
+  }
+}

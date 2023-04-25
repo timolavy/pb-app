@@ -1,0 +1,15 @@
+<pb-layout color="black">
+  <ng-container page>
+    <div class="flex flex-col justify-start items-center text-center">
+      <h1 class="mb-12">{{ 'ILLUSTRATIONS.TITLE' | translate }}</h1>
+      <pb-items-container [items]="(illustrations$ | async)!"></pb-items-container>
+      <div class="flex flex-row justify-center items-center">
+        <pb-generic-button
+          *ngIf="canLoadMore$ | async"
+          [label]="'GENERIC_BUTTON.SEE_MORE' | translate"
+          (pbClick)="loadMoreProduct()"
+        ></pb-generic-button>
+      </div>
+    </div>
+  </ng-container>
+</pb-layout>

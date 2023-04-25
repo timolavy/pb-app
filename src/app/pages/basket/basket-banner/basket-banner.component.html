@@ -1,0 +1,14 @@
+<div class="banner mb-12 flex flex-col gap-10 md:flex-row md:justify-center md:items-start md:gap-20">
+  <div class="flex flex-col">
+    <h1>{{ ('BASKET.SECURED_PAIEMENT' | translate).toUpperCase() }}</h1>
+    <p [innerHTML]="'BASKET.PAIEMENT_POSSIBILITIES' | translate"></p>
+  </div>
+  <div class="flex flex-col">
+    <h1>{{ ('BASKET.QUICK_DELIVERY' | translate).toUpperCase() }}</h1>
+    <p [innerHTML]="'BASKET.DELIVERY_POSSIBILITIES' | translate"></p>
+  </div>
+  <div class="flex flex-col">
+    <h1>{{ ('BASKET.FREE_RETURN' | translate).toUpperCase() }}</h1>
+    <p [innerHTML]="'BASKET.NEED_HELP' | translate"></p>
+  </div>
+</div>

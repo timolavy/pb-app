@@ -1,0 +1,84 @@
+@import 'src/assets/styles/colors';
+
+:host {
+  .footer {
+    .footer-right {
+      width: 100%;
+      background-size: cover;
+      overflow: hidden;
+      background-color: $pb-orange;
+
+      img {
+        width: 150px;
+      }
+    }
+
+    .footer-left {
+      .footer-title {
+        font-size: 52px;
+        margin: 0 0 15px;
+      }
+
+      .footer-socials {
+        font-size: 15px;
+        margin-bottom: 25px;
+      }
+
+      .footer-description {
+        font-size: 14px;
+        text-align: left;
+        max-width: 260px;
+        line-height: 22px;
+      }
+
+      .footer-menu {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: left;
+
+        li {
+          margin-bottom: 15px;
+        }
+      }
+
+      .footer-links {
+        font-size: 9px;
+        margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    @media(min-width: 992px) {
+      .footer-right {
+        width: 570px;
+      }
+
+      .footer-left {
+        padding: 0 50px 0 80px;
+      }
+    }
+
+    @media(max-width: 992px) {
+      .footer-left {
+        padding: 0 15px;
+
+        .footer-title,
+        .footer-socials,
+        .footer-description,
+        .footer-menu,
+        .footer-links {
+          text-align: center;
+        }
+      }
+
+      .footer-right {
+        min-height: 500px;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "BASKET": {
+    "DELIVERY": "Livraison",
+    "DELIVERY_POSSIBILITIES": "Expédition en 48h<br>Livraison Offerte<br>à partir de 200€ d’achats",
+    "EMPTY_LIST": "Vous n'avez pas d'article dans votre pannier !",
+    "GIFTED": "Offerte",
+    "NEED_HELP": "Une question, besoin d’aide ?<br>contactpremierebase@gmail.com<br>07 82 11 22 93",
+    "PAIEMENT_POSSIBILITIES": "Par carte bancaire<br>(Visa, MasterCard, CB),<br>PayPal, Apple Pay…",
+    "PRODUCT_REMOVED": "L'article a été retiré de votre panier",
+    "QUICK_DELIVERY": "Livraison rapide",
+    "REMOVE": "Supprimer",
+    "FREE_RETURN": "Retour gratuit",
+    "SECURED_PAIEMENT": "Paiement sécurisé",
+    "TOTAL_WD": "Sous-total",
+    "TOTAL": "Total",
+    "TITLE": "Panier"
+  }
+}

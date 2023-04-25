@@ -1,0 +1,30 @@
+<pb-layout color="black">
+  <ng-container page>
+    <div *ngIf="illustration$ | async as illustration" class="flex flex-col gap-8 mx-12">
+      <div class="flex flex-col justify-center items-center gap-8 md:flex-row">
+        <pb-illustration-image
+          [images]="illustration.images"
+          [selectedImage]="(selectedImage$ | async)!"
+          (selectImage)="onSelectImage($event)"
+        ></pb-illustration-image>
+        <pb-illustration-description
+          [illustration]="illustration"
+          [selectedFormat]="(selectedFormat$ | async)!"
+          [selectedQuantity]="(selectedQuantity$ | async)!"
+          (changeFormat)="onChangeFormat($event)"
+          (changeQuantity)="onChangeQuantity($event)"
+          (addToCart)="onAddToCart($event)"
+        ></pb-illustration-description>
+      </div>
+
+      <div class="text-center">
+        <h4>{{ 'ILLUSTRATION.DETAILS' | translate }}</h4>
+        <p [innerHTML]="illustration.details"></p>
+        <h4>{{ 'ILLUSTRATION.DELIVERY' | translate }}</h4>
+        <p [innerHTML]="'ILLUSTRATION.DELIVERY_DETAILS' | translate"></p>
+      </div>
+
+      <pb-collection-images *ngIf="illustration.collec" [collection]="illustration.collec"></pb-collection-images>
+    </div>
+  </ng-container>
+</pb-layout>

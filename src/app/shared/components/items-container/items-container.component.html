@@ -1,0 +1,6 @@
+<div class="flex flex-row flex-wrap items-center justify-center">
+  <ng-container *ngFor="let item of items; trackBy: trackByFn">
+    <pb-item-card class="max-w-xs" [item]="item"></pb-item-card>
+  </ng-container>
+  <p *ngIf="!items.length">{{ 'ITEMS.EMPTY_LIST' | translate }}</p>
+</div>

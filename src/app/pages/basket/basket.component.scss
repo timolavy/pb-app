@@ -1,0 +1,20 @@
+:host {
+  .basket {
+    text-align: center;
+
+    .basket-container {
+      width: fit-content;
+      margin: 0 auto;
+
+      .total-container {
+        border-top: solid 1px rgba(0,0,0,.12);
+        border-bottom: solid 1px rgba(0,0,0,.12);
+        padding: 25px 0;
+      }
+    }
+
+    .empty-list {
+      margin: 100px 0;
+    }
+  }
+}

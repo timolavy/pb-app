@@ -1,0 +1,66 @@
+<mat-table [dataSource]="products">
+  <ng-container matColumnDef="packshot">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <img
+        class="item-img"
+        [src]="env.uploads + element.image"
+        [alt]="element.label"
+      >
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="label">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <div class="flex flex-col justify-between">
+        <span class="element-title">{{ element.label }}</span>
+      </div>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="format">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+       {{ element.format.label }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      {{ element.format.price }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="quantity">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <pb-quantity-selector
+        [quantity]="element.quantity"
+        [maxQuantity]="element.stock"
+        [inline]="true"
+        size="sm"
+        (changeQuantity)="onChangeQuantity($event, element)"
+      ></pb-quantity-selector>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="total">
+    <mat-header-cell *matHeaderCellDef translate></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      {{ element.format.price * element.quantity | currency: 'EUR' }}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef></mat-header-cell>
+    <mat-cell *matCellDef="let element">
+      <div class="remove-button" (click)="onRemoveProduct(element)">
+        <span>{{ 'BASKET.REMOVE' | translate }}</span>
+      </div>
+    </mat-cell>
+  </ng-container>
+
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>

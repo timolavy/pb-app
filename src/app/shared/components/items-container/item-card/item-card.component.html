@@ -1,0 +1,14 @@
+<div class="item" (click)="goToIllustration(item._id)">
+  <img
+    *ngIf="item.images.packShot"
+    class="item-img"
+    [src]="env.uploads + imgUrl"
+    [alt]="item.label"
+    (mouseover)="changeImage('settingScene')"
+    (mouseout)="changeImage('packShot')"
+  >
+  <div class="flex flex-col gap-y-1">
+    <span>{{ item.label }}</span>
+    <span class="item-price">{{ minPrice | currency: 'EUR' }} - {{ maxPrice | currency: 'EUR' }}</span>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+{
+  "_id": "621775de2ec6810016655e16",
+  "label": "Brown Cap",
+  "details": "Édition limitée 100 exemplaires, numérotés et signés<br>Papier mat artistique 200g<br>Formats 30×40 – 50×70",
+  "category": {
+    "_id": "617e8e64c7128c0016190a31",
+    "createdAt": "2021-10-31T12:20:42.233Z",
+    "label": "Limited Edition"
+  },
+  "collec": {
+    "_id": "61800d8b2fbe9b0016b22116",
+    "images": {
+      "home": "23.png",
+      "collections": "9.png",
+      "details": [
+        "19.png",
+        "22.png",
+        "20.png"
+      ]
+    },
+    "createdAt": "2021-11-01T15:51:40.749Z",
+    "collaboration": false,
+    "label": "Hip-Hop Classic",
+    "theme": "617e8e2dc7128c0016190a2e",
+    "description": "xxx",
+    "collaborationDescription": ""
+  },
+  "formats": [
+    {
+      "_id": "6249cee54aa17f00167de9ab",
+      "format": "617e8e21c7128c0016190a2d",
+      "label": "30x40 cm",
+      "price": 55
+    },
+    {
+      "_id": "6249cee54aa17f00167de9ac",
+      "format": "6187dbe9827833001643424a",
+      "label": "50x70 cm",
+      "price": 90
+    }
+  ],
+  "stock": 100,
+  "images": {
+    "settingScene": "brown-cap-detail",
+    "packShot": "brown-cap.png",
+    "details": []
+  }
+}

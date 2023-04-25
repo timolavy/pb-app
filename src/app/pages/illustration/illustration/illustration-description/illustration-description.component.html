@@ -1,0 +1,25 @@
+<div class="text-center">
+  <h1>{{ illustration.label }}</h1>
+
+  <mat-form-field>
+    <mat-label>{{ 'ILLUSTRATION.FORMAT' | translate }}</mat-label>
+    <mat-select [(ngModel)]="selectedFormat" (selectionChange)="onChangeFormat($event)">
+      <mat-option *ngFor="let format of illustration.formats; trackBy: trackByFn" [value]="format">
+        {{ format.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <pb-quantity-selector
+    [quantity]="selectedQuantity"
+    [maxQuantity]="illustration.stock"
+    (changeQuantity)="onChangeQuantity($event)"
+  ></pb-quantity-selector>
+
+  <p>{{ 'ILLUSTRATION.STOCK' | translate: {stock: illustration.stock} }}</p>
+  <p class="price">{{ selectedFormat.price * selectedQuantity }}€</p>
+  <pb-generic-button
+    [label]="'ILLUSTRATION.ORDER' | translate"
+    (pbClick)="onAddToCart()"
+  ></pb-generic-button>
+</div>

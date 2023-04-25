@@ -1,0 +1,21 @@
+<div
+  class="quantity-container {{ size }} flex justify-start items-center"
+  [ngClass]="{'flex-row gap-x-4': inline, 'flex-col gap-y-1': !inline}"
+>
+  <div class="quantity-title">{{ 'ILLUSTRATION.QUANTITY' | translate }}</div>
+  <div class="quantity-input flex flex-row justify-between items-center">
+    <button
+      mat-button
+      [disabled]="quantity < 2"
+      (click)="decrease()"
+      class="decrease"
+    ><mat-icon>remove</mat-icon></button>
+    <span>{{ quantity }}</span>
+    <button
+      mat-button
+      [disabled]="quantity >= maxQuantity"
+      (click)="increase()"
+      class="increase"
+    ><mat-icon>add</mat-icon></button>
+  </div>
+</div>

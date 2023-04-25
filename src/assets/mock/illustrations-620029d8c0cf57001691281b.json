@@ -1,0 +1,41 @@
+{
+  "_id": "620029d8c0cf57001691281b",
+  "label": "Kobe Bryant",
+  "details": "Édition limitée 50 exemplaires, numérotés et signés<br>Papier Beaux-arts texturé 250g<br>Formats 30×40 – 50×70 - 70x100",
+  "category": {
+    "_id": "617e8e64c7128c0016190a31",
+    "createdAt": "2021-10-31T12:20:42.233Z",
+    "label": "Limited Edition"
+  },
+  "theme": {
+    "_id": "6187dc0b827833001643424c",
+    "createdAt": "2021-11-07T13:31:20.007Z",
+    "label": "Sport"
+  },
+  "formats": [
+    {
+      "_id": "6272ccd95b66d00016a7fe03",
+      "format": "617e8e21c7128c0016190a2d",
+      "label": "30x40 cm",
+      "price": 89
+    },
+    {
+      "_id": "6272ccd95b66d00016a7fe04",
+      "format": "6187dbe9827833001643424a",
+      "label": "50x70 cm",
+      "price": 180
+    },
+    {
+      "_id": "6272ccd95b66d00016a7fe05",
+      "format": "6187dbef827833001643424b",
+      "label": "70x100 cm",
+      "price": 230
+    }
+  ],
+  "stock": 12,
+  "images": {
+    "settingScene": "kobe detail 2022.jpg",
+    "packShot": "kobe frame.png",
+    "details": []
+  }
+}

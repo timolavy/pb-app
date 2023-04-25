@@ -1,0 +1,16 @@
+@import 'src/assets/styles/colors';
+
+:host {
+  .layout {
+    background-color: $pb-creme;
+    min-height: 100vh;
+
+    & > div {
+      min-height: 100vh;
+    }
+
+    .content-container {
+      min-height: calc(100vh - 120px);
+    }
+  }
+}

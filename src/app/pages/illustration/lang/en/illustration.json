@@ -1,0 +1,16 @@
+{
+  "ILLUSTRATIONS": {
+    "TITLE": "Illustrations"
+  },
+  "ILLUSTRATION": {
+    "DELIVERY": "Delivery and return",
+    "DELIVERY_DETAILS": "Please see <a href=\"#\">our page</a> on shipping and return policy",
+    "DETAILS": "Details",
+    "FORMAT": "Format",
+    "FORMATS": "Formats",
+    "ORDER": "Add to cart",
+    "PRODUCT_ADDED": "The item has been added to your cart",
+    "QUANTITY": "Quantity",
+    "STOCK": "{{stock}} in storage"
+  }
+}

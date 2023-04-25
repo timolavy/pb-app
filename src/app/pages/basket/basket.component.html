@@ -1,0 +1,38 @@
+<pb-layout color="black">
+  <ng-container page>
+    <div class="basket">
+      <h1>{{ 'BASKET.TITLE' | translate }}</h1>
+
+      <div *ngIf="savedProducts$ | async as savedProducts" class="basket-container">
+        <ng-container *ngIf="savedProducts.length; else emptyList">
+          <pb-basket-table
+            [products]="savedProducts"
+            (changeQuantity)="onChangeQuantity($event)"
+            (removeProduct)="onRemoveProduct($event)"
+          ></pb-basket-table>
+
+          <div class="total-container flex flex-col gap-3 justify-center items-end">
+            <div class="flex flex-row gap-7">
+              <span>{{ 'BASKET.TOTAL_WD' | translate }}</span>
+              <span>{{ totalHT$ | async | currency: 'EUR' }}</span>
+            </div>
+            <div class="flex flex-row gap-7">
+              <span>{{ 'BASKET.DELIVERY' | translate }}</span>
+              <span>{{ (applyDiscount$ | async) ? ('BASKET.GIFTED' | translate) : (deliveryPrice | currency: 'EUR') }}</span>
+            </div>
+            <div class="flex flex-row gap-7">
+              <span>{{ 'BASKET.TOTAL' | translate }}</span>
+              <span>{{ total$ | async | currency: 'EUR' }}</span>
+            </div>
+          </div>
+        </ng-container>
+
+        <ng-template #emptyList>
+          <p class="empty-list">{{ 'BASKET.EMPTY_LIST' | translate }}</p>
+        </ng-template>
+      </div>
+
+      <pb-basket-banner></pb-basket-banner>
+    </div>
+  </ng-container>
+</pb-layout>

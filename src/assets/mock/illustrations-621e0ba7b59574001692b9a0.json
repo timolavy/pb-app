@@ -1,0 +1,35 @@
+{
+  "_id": "621e0ba7b59574001692b9a0",
+  "label": "Located in Paris",
+  "details": "Édition limitée 50 exemplaires, numérotés et signés<br>Papier mat artistique 200g<br>Formats 30×40 – 50×70",
+  "category": {
+    "_id": "617e8e64c7128c0016190a31",
+    "createdAt": "2021-10-31T12:20:42.233Z",
+    "label": "Limited Edition"
+  },
+  "theme": {
+    "_id": "617e8e2dc7128c0016190a2e",
+    "createdAt": "2021-10-31T12:20:42.231Z",
+    "label": "Hip-Hop"
+  },
+  "formats": [
+    {
+      "_id": "621e0ba7b59574001692b9a1",
+      "format": "617e8e21c7128c0016190a2d",
+      "label": "30x40 cm",
+      "price": 65
+    },
+    {
+      "_id": "621e0ba7b59574001692b9a2",
+      "format": "6187dbe9827833001643424a",
+      "label": "50x70 cm",
+      "price": 130
+    }
+  ],
+  "stock": 50,
+  "images": {
+    "details": [],
+    "settingScene": "located-in-paris-detail",
+    "packShot": "located-in-paris.png"
+  }
+}

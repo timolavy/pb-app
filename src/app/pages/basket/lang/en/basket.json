@@ -1,0 +1,18 @@
+{
+  "BASKET": {
+    "DELIVERY": "Shipping",
+    "DELIVERY_POSSIBILITIES": "Shipping in 48h<br>Free delivery<br>from 200€ of purchase",
+    "EMPTY_LIST": "You don't have an item in your basket!",
+    "GIFTED": "Gifted",
+    "NEED_HELP": "A question, need help? contactpremierebase@gmail.com<br>07 82 11 22 93",
+    "PAIEMENT_POSSIBILITIES": "By credit card<br>(Visa, MasterCard, CB),<br>PayPal, Apple Pay...",
+    "PRODUCT_REMOVED": "The item has been removed of your cart",
+    "QUICK_DELIVERY": "Quick delivery",
+    "REMOVE": "Remove",
+    "FREE_RETURN": "Free shipping",
+    "SECURED_PAIEMENT": "Secure payment",
+    "TOTAL_WD": "Subtotal",
+    "TOTAL": "Total",
+    "TITLE": "Basket"
+  }
+}

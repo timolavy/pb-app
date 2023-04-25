@@ -1,0 +1,7 @@
+{
+  "NOT_FOUND": {
+    "404": "Oups !",
+    "PAGE_MISSING": "La page que vous recherchez semble introuvable.",
+    "RETURN_HOME": "Revenir à la page d'accueil"
+  }
+}
